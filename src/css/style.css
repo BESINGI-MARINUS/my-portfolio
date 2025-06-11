@@ -16,6 +16,11 @@
   --color-section-bg: #2a214d;
 }
 
+/* Font families
+1. Inter for headings
+2. Roboto for body texts
+ */
+
 *,
 *::before,
 *::after {
@@ -35,4 +40,52 @@ body {
     var(--color-primary-dark),
     var(--color-purple-950)
   );
+  font-family: 'Roboto';
+}
+
+/* General Styles */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-hero {
+  .nav {
+    background-color: #1f293c;
+    border-bottom: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* .logo {
+    width: 10rem;
+    height: 10rem;
+  } */
+
+  .logo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-light),
+      var(--color-secondary-light)
+    );
+    color: transparent;
+    background-clip: text;
+  }
+
+  .nav__items {
+    font-size: 1.8rem;
+    display: flex;
+  }
+
+  .nav__item {
+  }
+
+  .nav__link {
+  }
 }
