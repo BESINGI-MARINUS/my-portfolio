@@ -1,3 +1,21 @@
+:root {
+  /* Primary Colors */
+  --color-primary-dark: #11172c;
+  --color-primary-light: #521a7e;
+  --color-purple-950: #3b0764;
+
+  /* Secondary Colors */
+  --color-secondary: #d82b7c;
+  --color-secondary-light: #ea75c1;
+
+  /* Tertiary Color */
+  --color-tertiary: #1f293c;
+
+  --color-body-text: #b5cde1;
+  --color-green: #68c485;
+  --color-section-bg: #2a214d;
+}
+
 *,
 *::before,
 *::after {
@@ -9,4 +27,12 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-dark),
+    var(--color-purple-950)
+  );
 }
