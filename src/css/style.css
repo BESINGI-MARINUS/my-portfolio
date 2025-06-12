@@ -65,6 +65,14 @@ a {
   line-height: 1.7;
 }
 
+.section {
+  padding: 7rem 2rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
 /* Hero section */
 .section-hero {
   .nav {
@@ -109,10 +117,11 @@ a {
       content: '';
       width: 4px;
       height: 0;
-      background-image: var(--purple-gradient);
+      background-color: #9f2ce7;
+      /* background-image: var(--purple-gradient); */
       position: absolute;
       left: 0;
-      transition: height 0.3s ease 0.3s, width 0.3s ease 0.5s;
+      transition: height 0.3s ease 0.3s, width 0.2s ease 0.5s;
     }
     &:hover&::before {
       width: 100%;
@@ -142,9 +151,17 @@ a {
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
-  background-color: #fff;
   display: inline-block;
   outline: 3px solid #ae77d8;
+  background-image: url('../imgs/8064e2f2-19db-4be0-843b-6f6e6a6ae3b5~1.jpg');
+  background-size: cover;
+  background-position: top;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .heading-primary {
