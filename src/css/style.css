@@ -9,11 +9,11 @@
   --color-secondary-light: #ea75c1;
 
   /* Tertiary Color */
-  --color-tertiary: #1f293c;
+  --color-tertiary: #1a293b;
 
   --color-body-text: #b5cde1;
   --color-green: #68c485;
-  --color-section-bg: #2a214d;
+  --color-section-bg: #2a224d;
   --purple-gradient: linear-gradient(
     to right,
     var(--color-primary-dark),
@@ -66,6 +66,10 @@ a {
 
 .section {
   padding: 7rem 3rem;
+}
+
+.section-even {
+  background-color: var(--color-section-bg);
 }
 
 .u-center-text {
@@ -270,7 +274,6 @@ a {
         display: flex;
         align-items: center;
         gap: 0.7rem;
-        /* margin-right: 1rem; */
       }
     }
   }
@@ -292,5 +295,101 @@ a {
     background-image: url('../imgs/8064e2f2-19db-4be0-843b-6f6e6a6ae3b5~1.jpg');
     background-size: cover;
     border-radius: 1rem;
+  }
+}
+
+/* Skills and technologies section */
+.section-skills {
+}
+
+.skill-cards {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.skill__card {
+  padding: 2.5rem;
+  background-color: var(--color-tertiary);
+  border: 0.5px solid #dddddd20;
+  border-radius: 0.5rem;
+}
+
+.skill__card .skills span {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5rem;
+  margin: 0.4rem;
+}
+
+.skill__card--1 {
+  color: #c693e6;
+  svg {
+    fill: #c693e6;
+  }
+  .skill_title {
+    color: inherit;
+  }
+
+  .skills span {
+    background-color: #352a5d;
+    color: inherit;
+  }
+}
+.skill__card--2 {
+  color: var(--color-green);
+  svg {
+    fill: #68c485;
+  }
+  .skill_title {
+    color: inherit;
+  }
+
+  .skills span {
+    background-color: #68c48540;
+    color: inherit;
+  }
+}
+.skill__card--3 {
+  color: #35a7fa;
+  svg {
+    fill: #35a7fa;
+  }
+  .skill_title {
+    color: inherit;
+  }
+
+  .skills span {
+    background-color: #15355e;
+    color: inherit;
+  }
+}
+.skill__card--4 {
+  color: #ff8c2c;
+  svg {
+    fill: #ff8c2c;
+  }
+  .skill_title {
+    color: inherit;
+  }
+
+  .skills span {
+    background-color: #48302f;
+    color: inherit;
+  }
+}
+
+.skill_title {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
