@@ -149,7 +149,7 @@ a {
       width: 4px;
       height: 0;
       background-color: #9f2ce7;
-      /* background-image: var(--purple-gradient); */
+      bottom: 0;
       position: absolute;
       left: 0;
       transition: height 0.3s ease 0.3s, width 0.2s ease 0.5s;
@@ -299,8 +299,6 @@ a {
 }
 
 /* Skills and technologies section */
-.section-skills {
-}
 
 .skill-cards {
   margin: 5rem 0;
