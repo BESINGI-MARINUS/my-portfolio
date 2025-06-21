@@ -44,7 +44,6 @@ body {
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -105,7 +104,7 @@ a {
   background-color: var(--color-primary-light);
   background-clip: text;
   color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .grid {
@@ -187,12 +186,6 @@ a {
   background-image: url('../imgs/8064e2f2-19db-4be0-843b-6f6e6a6ae3b5~1.jpg');
   background-size: cover;
   background-position: top;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 .skill-title {
@@ -224,6 +217,25 @@ a {
 
 .btn.purple {
   border: 1px solid #9f2ce7;
+}
+
+.btn-green {
+  color: var(--color-green);
+  background-color: #fff;
+  border: 1px solid var(--color-green);
+  transition: all 0.2s;
+  svg {
+    fill: var(--color-green);
+    margin-right: 1rem;
+  }
+  &:hover {
+    background-color: var(--color-green);
+    border: 1px solid transparent;
+    color: #eee;
+  }
+  &:hover svg {
+    fill: #eee;
+  }
 }
 
 .hero-btn-purple {
@@ -389,5 +401,70 @@ a {
   svg {
     width: 2.5rem;
     height: 2.5rem;
+  }
+}
+
+/* ======== Projects Section ======== */
+
+.projects-row {
+  margin: 5rem 0;
+  display: flex;
+  gap: 3rem;
+}
+
+.project-col {
+  /* width: 42rem; */
+  border: 0.5px solid #dddddd20;
+  background-color: var(--color-tertiary);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.009);
+  }
+
+  .img-wrap {
+    width: 100%;
+    height: 22rem;
+    background-color: #777;
+  }
+
+  .text-wrap {
+    padding: 2rem;
+  }
+  .project-description {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  .technologies {
+    padding: 1rem 0;
+    display: flex;
+    .technology {
+      font-size: 1.3rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 5rem;
+      margin: 0.4rem;
+      border: 1px solid #c19cd8;
+      color: #c19cd8;
+    }
+  }
+  .social-links {
+    display: flex;
+    padding-top: 0.5rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    .btn {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+    .btn-purple {
+      border: 1px solid var(--color-primary-light);
+      &:hover {
+        border: 1px solid #a28bb0;
+      }
+    }
   }
 }
