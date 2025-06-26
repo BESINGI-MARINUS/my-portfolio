@@ -95,12 +95,18 @@ a {
   font-size: 5rem;
   font-family: 'inter', 'Roboto', 'open sans';
   padding: 1rem 0 2rem;
+  @media (max-width: 58em) {
+    font-size: 3.5rem;
+  }
 }
 
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: capitalize;
   font-family: 'Inter', 'Roboto', 'open sans';
+  @media (max-width: 58em) {
+    font-size: 3rem;
+  }
 }
 
 .heading-tertiary {
@@ -111,6 +117,9 @@ a {
   background-clip: text;
   color: transparent;
   margin-bottom: 1rem;
+  @media (max-width: 58em) {
+    font-size: 2rem;
+  }
 }
 
 .grid {
@@ -118,6 +127,10 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+
+  @media (max-width: 53.125em) {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Hero section */
@@ -142,7 +155,7 @@ a {
     font-size: 1.8rem;
     display: flex;
     align-self: stretch;
-    @media (max-width: 47em) {
+    @media (max-width: 56.25em) {
       display: none;
     }
   }
@@ -202,6 +215,11 @@ a {
   font-weight: 400;
   margin-bottom: 2.5rem;
   color: #b8b7b7;
+  @media (max-width: 58em) {
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .hero-description {
@@ -316,6 +334,25 @@ a {
     background-image: url('../imgs/8064e2f2-19db-4be0-843b-6f6e6a6ae3b5~1.jpg');
     background-size: cover;
     border-radius: 1rem;
+
+    @media (max-width: 71.25em) {
+      width: 85%;
+    }
+    @media (max-width: 68em) {
+      width: 95%;
+    }
+    @media (max-width: 58em) {
+      width: 100%;
+    }
+    @media (max-width: 53.125em) {
+      width: 75%;
+    }
+    @media (max-width: 37.5em) {
+      width: 90%;
+    }
+    @media (max-width: 31.25em) {
+      width: 100%;
+    }
   }
 }
 
@@ -326,6 +363,13 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+  @media (max-width: 78em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 52.5em) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .skill__card {
@@ -419,6 +463,10 @@ a {
   margin: 5rem 0;
   display: flex;
   gap: 3rem;
+
+  @media (max-width: 78em) {
+    flex-wrap: wrap;
+  }
 }
 
 .project-col {
@@ -431,6 +479,12 @@ a {
     transform: scale(1.009);
   }
 
+  @media (max-width: 78em) {
+    flex: 0 0 48%;
+  }
+  @media (max-width: 53.125em) {
+    flex: 0 0 100%;
+  }
   .img-wrap {
     width: 100%;
     height: 22rem;
@@ -632,7 +686,7 @@ a {
     z-index: 20;
     display: none;
 
-    @media (max-width: 47em) {
+    @media (max-width: 56.25em) {
       display: flex;
     }
   }
