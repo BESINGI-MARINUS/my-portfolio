@@ -26,6 +26,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   @media (min-width: 112.5em) {
     font-size: 90%;
@@ -142,9 +143,16 @@ a {
     border-bottom: 0.5px solid #dddddd20;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 6rem;
     padding: 0 4rem;
+    transition: all 0.4s;
+  }
+
+  .sticky {
+    background-color: #0b172ac4;
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
 
   .logo {
@@ -156,6 +164,7 @@ a {
     font-size: 1.8rem;
     display: flex;
     align-self: stretch;
+    margin-left: auto;
     @media (max-width: 56.25em) {
       display: none;
     }
@@ -689,11 +698,11 @@ a {
   }
   #toggle-input:checked + .toggle-label::before {
     top: 0;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
   }
   #toggle-input:checked + .toggle-label::after {
     bottom: 0;
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
   }
 
   .toggle-btn {
