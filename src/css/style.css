@@ -1,16 +1,10 @@
 :root {
-  /* Primary Colors */
   --color-primary-dark: #11172c;
   --color-primary-light: #c07df1;
   --color-purple-950: #3b0764;
-
-  /* Secondary Colors */
   --color-secondary: #d82b7c;
   --color-secondary-light: #ea75c1;
-
-  /* Tertiary Color */
   --color-tertiary: #0b172a;
-
   --color-body-text: #b5cde1;
   --color-green: #68c485;
   --color-section-bg: #2a224d;
@@ -32,6 +26,10 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media (min-width: 112.5em) {
+    font-size: 90%;
+  }
 }
 
 body {
@@ -71,6 +69,9 @@ a {
 
 .section {
   padding: 7rem 3rem;
+  @media (max-width: 52.5em) {
+    padding: 5rem 2rem;
+  }
 }
 
 .section-even {
@@ -230,6 +231,11 @@ a {
 .hero_btns-container {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 26.5em) {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
 .btn:link,
@@ -240,6 +246,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 32.75em) {
+    padding: 0.8rem 2rem;
+  }
 }
 
 .btn.purple {
@@ -270,6 +280,10 @@ a {
   background-color: var(--color-primary-light);
   margin-right: 2rem;
   transition: all 0.2s;
+
+  @media (max-width: 26em) {
+    margin: 0;
+  }
 
   &:hover {
     background-color: #7511b3;
@@ -326,6 +340,9 @@ a {
     );
     border-radius: 1rem;
     padding: 0.5rem;
+    @media (max-width: 53.125em) {
+      height: 50rem;
+    }
   }
 
   figure.about-img {
@@ -363,8 +380,10 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  @media (max-width: 78em) {
+
+  @media (max-width: 78.125em) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   @media (max-width: 52.5em) {
     grid-template-columns: 1fr;
@@ -376,7 +395,7 @@ a {
   padding: 2.5rem;
   background-color: var(--color-tertiary);
   border: 0.5px solid #dddddd20;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
 }
 
 .skill__card .skills span {
@@ -461,11 +480,15 @@ a {
 
 .projects-row {
   margin: 5rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 
-  @media (max-width: 78em) {
-    flex-wrap: wrap;
+  /* @media (max-width: 78.125em) {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+  @media (max-width: 52.5em) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -479,12 +502,6 @@ a {
     transform: scale(1.009);
   }
 
-  @media (max-width: 78em) {
-    flex: 0 0 48%;
-  }
-  @media (max-width: 53.125em) {
-    flex: 0 0 100%;
-  }
   .img-wrap {
     width: 100%;
     height: 22rem;
@@ -609,11 +626,17 @@ a {
   background-color: var(--color-tertiary);
   border-radius: 0.8rem;
   border: 0.5px solid #dddddd20;
+  @media (max-width: 32.75em) {
+    width: 100%;
+  }
 
   .form-group {
     display: flex;
     width: 100%;
     gap: 1.5rem;
+    @media (max-width: 32.75em) {
+      flex-wrap: wrap;
+    }
 
     & > * {
       flex: 1;
@@ -681,7 +704,6 @@ a {
     top: 1.4rem;
     right: 4rem;
     padding: 0.3rem;
-    display: flex;
     align-items: center;
     z-index: 20;
     display: none;
