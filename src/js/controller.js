@@ -3,7 +3,6 @@
 // ELEMENTS
 const toggleInput = document.getElementById('toggle-input');
 const sideNav = document.querySelector('.side__items');
-const sections = document.querySelectorAll('.section');
 
 // Hamburger menu
 toggleInput.addEventListener('change', function (e) {
@@ -43,3 +42,22 @@ const observer = new IntersectionObserver(
   }
 );
 observer.observe(heroSection);
+
+// Sections Fade-in animation
+const sections = document.querySelectorAll('.section');
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.remove('hide-section');
+    });
+  },
+  {
+    root: null,
+    threshold: 0.2,
+  }
+);
+sections.forEach((s) => {
+  s.classList.add('hide-section');
+  sectionObserver.observe(s);
+});

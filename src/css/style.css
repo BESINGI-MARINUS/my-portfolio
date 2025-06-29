@@ -70,6 +70,7 @@ a {
 
 .section {
   padding: 7rem 3rem;
+  transition: transform 1s;
   @media (max-width: 52.5em) {
     padding: 5rem 2rem;
   }
@@ -133,6 +134,11 @@ a {
   @media (max-width: 53.125em) {
     grid-template-columns: 1fr;
   }
+}
+
+.hide-section {
+  transform: translateY(8rem);
+  opacity: 0;
 }
 
 /* Hero section */
