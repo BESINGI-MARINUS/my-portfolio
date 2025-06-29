@@ -241,6 +241,10 @@ a {
 .hero-description {
   margin-bottom: 4rem;
   font-size: 1.8rem;
+
+  @media (max-width: 36.125em) {
+    padding: 0 0.7rem;
+  }
 }
 
 .hero_btns-container {
@@ -334,6 +338,9 @@ a {
   .about-text-wrap {
     align-self: center;
     padding-right: 3rem;
+    @media (max-width: 53.125em) {
+      padding-right: 0;
+    }
 
     .about-row {
       display: flex;
@@ -578,6 +585,9 @@ a {
   .company {
     font-size: 1.8rem;
     font-weight: 500;
+    @media (max-width: 34.2em) {
+      font-size: 1.6rem;
+    }
   }
 
   .role {
@@ -586,6 +596,13 @@ a {
 
   header {
     margin-bottom: 2rem;
+    @media (max-width: 34.2em) {
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      & > * {
+        flex: 0 0 100%;
+      }
+    }
   }
   .row__date {
     color: var(--color-body-text);
@@ -595,6 +612,11 @@ a {
       height: 2.2rem;
       margin-right: 1rem;
       fill: var(--color-body-text);
+    }
+    @media (max-width: 34.2em) {
+      justify-content: left;
+      font-size: 1.3rem;
+      opacity: 0.7;
     }
   }
 
@@ -691,6 +713,10 @@ a {
   background-color: var(--color-tertiary);
   padding: 3rem 0;
   border: 0.5px solid #dddddd20;
+
+  @media (max-width: 35.6em) {
+    font-size: 1.2rem;
+  }
 }
 
 /* Responsive Nav */
