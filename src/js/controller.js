@@ -59,5 +59,6 @@ const sectionObserver = new IntersectionObserver(
 );
 sections.forEach((s) => {
   s.classList.add('hide-section');
+  s.querySelectorAll('*').forEach;
   sectionObserver.observe(s);
 });

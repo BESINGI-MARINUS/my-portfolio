@@ -530,6 +530,11 @@ a {
     background-color: #777;
   }
 
+  .img-wrap-1 {
+    background-image: url('../imgs/forkify.png');
+    background-size: cover;
+  }
+
   .text-wrap {
     padding: 2rem;
   }
