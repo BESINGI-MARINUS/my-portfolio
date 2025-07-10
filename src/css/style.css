@@ -534,6 +534,10 @@ a {
     background-image: url('../imgs/forkify.png');
     background-size: cover;
   }
+  .img-wrap-2 {
+    background-image: url('../imgs/ChatApp.PNG');
+    background-size: cover;
+  }
 
   .text-wrap {
     padding: 2rem;
